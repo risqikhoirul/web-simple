@@ -1,0 +1,52 @@
+/* Untuk Tabletll */
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .project {
+    height: 450px;
+  }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  .lesson {
+    width: 100%;
+  }
+  /* Tambahkan CSS untuk header-right */
+  .header-right {
+    display: none;
+  }
+
+  /* Tambahkan CSS untuk menu-icon */
+  .menu-icon {
+    display: block;
+  }
+  .project {
+    height: 670px;
+  }
+  /* Tambahkan CSS untuk menu-icon */
+  .menu-icon {
+    display: block;
+  }
+  input,
+  textarea {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+  }
+  .footer {
+    background-color: #e600ff;
+    height: 150px;
+    text-align: center;
+  }
+  .footer li {
+    padding-top: 0;
+  }
+}

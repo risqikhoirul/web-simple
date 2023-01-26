@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: "Avenir Next";
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+  float: left;
+  padding: 33px 20px;
+}
+
+.header {
+  background-color: #ff0000;
+  color: #fff;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.main {
+  background-color: #ff4500;
+  height: 230px;
+  text-align: center;
+  padding: 40px;
+}
+
+.tentang {
+  background-color: #ffff00;
+  height: 300px;
+  text-align: center;
+  padding: 40px;
+}
+.project {
+  background-color: #00ff40;
+  height: 270px;
+  text-align: center;
+  padding: 40px;
+}
+.contact {
+  background-color: #2600ff;
+  height: 350px;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+input,
+textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+}
+.contact-submit {
+  background-color: #2f32b3;
+  color: #ffffff;
+}
+.footer {
+  background-color: #e600ff;
+  height: 90px;
+}
+img {
+  width: 170px;
+}
+.lesson {
+  margin: 0 auto;
+  float: left;
+  width: 33%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.link {
+  background-color: #fff;
+  padding: 1px 5px;
+  border-radius: 30px;
+}
+h1 {
+  margin: 10px;
+  color: black;
+}
+.header-right {
+  margin-right: -25px;
+}
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 30px;
+  padding: 21px 0;
+  /* Gantikan property display ke none */
+  display: none;
+}
+
+.fa {
+  margin-right: 5px;
+}
+.contact-submit:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
