@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST DOM JS</title>
+    <style>
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input {
+        padding: 10px;
+        border-radius: 30px;
+      }
+      #output {
+        margin: 20px 0 20px 0;
+        padding: 20px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="input" type="number" />
+    <input onclick="kelipatan()" type="button" value="TEST" />
+    <div id="output"></div>
+    <script>
+      const inpt = document.getElementById("input");
+      const out = document.getElementById("output");
+      function kelipatan() {
+        if (inpt.value === "") {
+          const p = document.createElement("p");
+          p.innerHTML = "Invalid";
+          out.appendChild(p);
+        } else if (!isNaN(inpt)) {
+          const p = document.createElement("p");
+          p.innerHTML = "Invalid Number";
+          out.appendChild(p);
+        } else if (inpt.value % 3 === 0 && inpt.value % 5 === 0) {
+          const p = document.createElement("p");
+          p.innerHTML = "FizzBuzz";
+          out.appendChild(p);
+        } else if (inpt.value % 3 === 0) {
+          const p = document.createElement("p");
+          p.innerHTML = "Fizz";
+          out.appendChild(p);
+        } else if (inpt.value % 5 === 0) {
+          const p = document.createElement("p");
+          p.innerHTML = "Buzz";
+          out.appendChild(p);
+        } else {
+          const p = document.createElement("p");
+          p.innerHTML = inpt.value;
+          out.appendChild(p);
+        }
+      }
+    </script>
+  </body>
+</html>
